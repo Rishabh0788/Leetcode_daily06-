@@ -1,0 +1,29 @@
+ Problem = string compression 
+
+code:-
+class Solution {
+public:
+    int compress(vector<char>& a) {
+    int idx = 0;
+    int n = a.size();
+    for( int i=0; i<n; i++){
+        int ch = a[i];
+        int count = 0;
+        
+        while (i < n && a[i] == ch){
+            count++;
+            i++;
+        }
+        a[idx++] = ch;
+        if(count > 1){
+            string str = to_string(count);
+            for(char dig : str){
+             a[idx++] = dig;
+            }
+        }
+        i--;
+    }    
+    return idx;    
+}
+
+};
