@@ -1,4 +1,4 @@
-Problem = reverse degree of a string
+Problem = reverse degree of a string.
 
 code:-
 class Solution {
