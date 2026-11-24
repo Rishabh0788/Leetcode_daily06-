@@ -1,6 +1,6 @@
-Problem = Remove all accrance of substring 
+Problem = Remove all accrance of substring.
 
-code =
+code:-
 
 class Solution {
 public:
