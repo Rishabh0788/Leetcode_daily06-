@@ -1,6 +1,6 @@
 Problem = longest Conseutive Sequence.
 
-code-
+code:-
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
